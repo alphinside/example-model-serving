@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "example_model_serving"
+version = "0.1.0"
+description = ""
+authors = ["Alvin Prayuda <alvinprayuda@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+scikit-learn = "^1.0.2"
+fastapi = "^0.75.0"
+uvicorn = "^0.17.6"
+python-dotenv = "^0.19.2"
+pandas = "^1.4.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
