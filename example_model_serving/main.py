@@ -1,12 +1,12 @@
 import logging
 from pathlib import Path
+from typing import List
 
 import pandas as pd
 from fastapi import FastAPI
 from joblib import load
 from pydantic import BaseModel
 from starlette.requests import Request
-from typing import List
 
 from .config import ModelType, get_settings
 
@@ -42,6 +42,7 @@ class RequestBody(BaseModel):
     sepal_width: float
     petal_length: float
     petal_width: float
+
 
 class Response(BaseModel):
     results: List[List[float]]
